@@ -1,6 +1,6 @@
 # HaaV - Strategisk domænemodel
 
-**Gruppe:** ______HISE______  **Dato:** _______________
+**Gruppe:** ______HISE______  **Dato:** ______09/09______
 
 > Udfyld tabellerne mens I arbejder. Skriv kort — én linje pr. felt er nok.
 > Der er ikke ét rigtigt svar; det er begrundelserne der tæller.
