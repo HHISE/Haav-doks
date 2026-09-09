@@ -8,24 +8,24 @@
 
 **E** = entitet · **V** = værdiobjekt · **X** = hører til i en anden kontekst
 
-| Nr. | Begreb | E/V/X | Begrundelse (kun hvis den ikke er indlysende) | Hvis X: hvilken kontekst, og hvad kender vi den ved? |
-|---|---|---|---|---|
-| 1 | Kurv | | | |
-| 2 | Kurvlinje | | | |
-| 3 | Ordre | | | |
-| 4 | Ordrelinje | | | |
-| 5 | Vare | | | |
-| 6 | Varebeskrivelse m. billeder | | | |
-| 7 | Medlem | | | |
-| 8 | Provisionssats | | | |
-| 9 | Kunde | | | |
-| 10 | Beløb | | | |
-| 11 | Antal | | | |
-| 12 | Leveringsadresse | | | |
-| 13 | Leveringsmåde | | | |
-| 14 | Afhentningskode | | | |
-| 15 | Ordrestatus | | | |
-| 16 | Sidste salgsdato | | | |
+| Nr. | Begreb | E/V/X | Begrundelse (kun hvis den ikke er indlysende)       | Hvis X: hvilken kontekst, og hvad kender vi den ved? |
+|---|---|-------|-----------------------------------------------------|---|
+| 1 | Kurv | E     | den er unik for hver ordre oprettelse               | |
+| 2 | Kurvlinje | V     | ikke unik, kan have x i flere kurve                 | |
+| 3 | Ordre | E     |                                                     | |
+| 4 | Ordrelinje | V     | Ikke Unik, fordi der kan ligge flere x i samme kurv | |
+| 5 | Vare | E     |                                                     | |
+| 6 | Varebeskrivelse m. billeder | V     | den er ikke unik og har ikke sin egen historie      | |
+| 7 | Medlem | X     |                                       | |
+| 8 | Provisionssats | V     |                                                     | |
+| 9 | Kunde | E     |                                                     | |
+| 10 | Beløb | V     |                                                     | |
+| 11 | Antal | V     |                                                     | |
+| 12 | Leveringsadresse | V     |                                                     | |
+| 13 | Leveringsmåde | V     |                                                     | |
+| 14 | Afhentningskode | V     |                                                     | |
+| 15 | Ordrestatus | V     |                                                     | |
+| 16 | Sidste salgsdato | V     |                                                     | |
 
 **Vi er uenige om:** _______________________________________
 
