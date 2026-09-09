@@ -84,7 +84,7 @@
 | levering | Kunden henter selv i butikken (Bente) | HaaV kører ud til sommerhuse (Dorte) | Afhentning vs. Udbringning |
 | vare | | | |
 | medlem | | | |
-| kunde | | | |
+| kunde | | | | 
 | ordre | | | |
 | kampagne | | | |
 
