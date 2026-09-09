@@ -10,13 +10,13 @@
 ## Tabel 1 - Forretningskompetencer (Trin 1)
 
 | Kompetence | "Evnen til at ..." | Kort (Bilag B) | Core / Supporting / Generic | Begrundelse (1 linje) |
-|-----------|---|---|---|---| 
-|           | | | | |
-|           | | | | |
-|           | | | | |
-|           | | | | |
-|           | | | | |
-|           | | | | |
+|------|---|----------------|-----------------------------|---| 
+|      | | B2             | Core                        | |
+|      | | B3             | Core                        | |
+|      | |                |                             | |
+|      | |                |                             | |
+|      | |                |                             | |
+|      | |                |                             | |
 
 **Svære kort — hvor placerede vi dem, og hvorfor?**
 
