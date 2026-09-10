@@ -8,26 +8,26 @@
 
 **E** = entitet · **V** = værdiobjekt · **X** = hører til i en anden kontekst
 
-| Nr. | Begreb | E/V/X | Begrundelse (kun hvis den ikke er indlysende)       | Hvis X: hvilken kontekst, og hvad kender vi den ved? |
-|---|---|-------|-----------------------------------------------------|---|
-| 1 | Kurv | E     | den er unik for hver ordre oprettelse               | |
-| 2 | Kurvlinje | V     | ikke unik, kan have x i flere kurve                 | |
-| 3 | Ordre | E     |                                                     | |
-| 4 | Ordrelinje | V     | Ikke Unik, fordi der kan ligge flere x i samme kurv | |
-| 5 | Vare | E     |                                                     | |
-| 6 | Varebeskrivelse m. billeder | V     | den er ikke unik og har ikke sin egen historie      | |
-| 7 | Medlem | X     |                                       | |
-| 8 | Provisionssats | V     |                                                     | |
-| 9 | Kunde | E     |                                                     | |
-| 10 | Beløb | V     |                                                     | |
-| 11 | Antal | V     |                                                     | |
-| 12 | Leveringsadresse | V     |                                                     | |
-| 13 | Leveringsmåde | V     |                                                     | |
-| 14 | Afhentningskode | V     |                                                     | |
-| 15 | Ordrestatus | V     |                                                     | |
-| 16 | Sidste salgsdato | V     |                                                     | |
+| Nr. | Begreb | E/V/X | Begrundelse (kun hvis den ikke er indlysende)                         | Hvis X: hvilken kontekst, og hvad kender vi den ved? |
+|---|---|-------|-----------------------------------------------------------------------|-----------------------------------------------------|
+| 1 | Kurv | E     | har en identitet som bliver, hvor de ting som er i kan ændre sig      |                                                     |
+| 2 | Kurvlinje | V     | ikke unik, kan have x i flere kurve                                   |                                                     |
+| 3 | Ordre | E     |                                                                       |                                                     |
+| 4 | Ordrelinje | V     | Ikke Unik, fordi der kan ligge flere x i samme kurv                   |                                                     |
+| 5 | Vare | E     |                                                                       |                                                     |
+| 6 | Varebeskrivelse m. billeder | V     | den er ikke unik og har ikke sin egen historie                        |                                                     |
+| 7 | Medlem | X     | Data ligger et andet sted                                             |                                                     |
+| 8 | Provisionssats | X     | Høre ikke til i salg og ordre                                         |                                                     |
+| 9 | Kunde | X     | Data hører ind under noget andet og er noget salg og ordre referer til | KundeId                                             |
+| 10 | Beløb | V     |                                                                       |                                                     |
+| 11 | Antal | V     |                                                                       |                                                     |
+| 12 | Leveringsadresse | V     |                                                                       |                                                     |
+| 13 | Leveringsmåde | V     |                                                                       |                                                     |
+| 14 | Afhentningskode | V     |                                                                       |                                                     |
+| 15 | Ordrestatus | V     |                                                                       |                                                     |
+| 16 | Sidste salgsdato | V     |                                                                       |                                                     |
 
-**Vi er uenige om:** _______________________________________
+**Vi er uenige om:** _________Hører Kunde reelt hjemme i denne kontekst eller er en reference til en ekstern kontekst, ligesom Medlem._________
 
 ---
 
