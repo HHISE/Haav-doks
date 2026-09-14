@@ -8,15 +8,16 @@
 ---
 
 ## Tabel 1 - Forretningskompetencer (Trin 1)
+Resten af kompetencerne ligger i drev
 
-| Kompetence | "Evnen til at ..." | Kort (Bilag B) | Core / Supporting / Generic | Begrundelse (1 linje) |
-|------|---|----------------|-----------------------------|---| 
-|      | | B2             | Core                        | |
-|      | | B3             | Core                        | |
-|      | |                |                             | |
-|      | |                |                             | |
-|      | |                |                             | |
-|      | |                |                             | |
+| Kompetence                                                   | "Evnen til at ..."   | Kort (Bilag B) | Core / Supporting / Generic | Begrundelse (1 linje)                                  |
+|--------------------------------------------------------------|----------------------|----------------|-----------------------------|--------------------------------------------------------| 
+| Vise et samlet vareudvalg fra alle 27 medlemmer i én webshop | samlet i en webshop  | B2             | Core                        | Det er med til at gøre virksomheden konkurrence dygtig |
+| Lade en kunde lægge varer fra flere medlemmer i samme kurv   | samlet kurv på tværv | B3             | Core                        | fordel på marked                                       |
+|                                                              |                      |                |                             |                                                        |
+|                                                              |                      |                |                             |                                                        |
+|                                                              |                      |                |                             |                                                        |
+|                                                              |                      |                |                             |                                                        |
 
 **Svære kort — hvor placerede vi dem, og hvorfor?**
 
@@ -27,15 +28,18 @@
 
 > **Fælles markedsplads for lokale varer** — evnen til at lade 27 selvstændige forretninger optræde som én butik over for kunden.
 
-| Kriterium | Opfyldt? | Begrundelse |
-|---|---|---|
-| Skaber reel konkurrencefordel | | |
-| Svær at kopiere | | |
-| Understøtter strategien direkte | | |
+| Kriterium | Opfyldt? | Begrundelse                                                                                                                             |
+|---|----------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| Skaber reel konkurrencefordel | x        | giver stor værdi, for de kunder som gerne vil handle på tværs                                                                           |
+| Svær at kopiere | x        | svært at organisere (samarbejde) og bygge (it)                                                                                          |
+| Understøtter strategien direkte | x        | ja, løsningen skal være bygget op om at det er en organisation med "medlemer"(små virksomheder) som gerne vil sælge deres ting på tværs |
 
 **Svarer vores kortgruppering til ledelsens afgrænsning — eller havde vi skåret anderledes?**
+yes
 
 **Stærkeste anden core-kandidat, og hvorfor den ikke blev valgt:**
+Anden kanditat:
+Kampagner og nyhedsbrevet var anden kandidat til core, da dette også er deres konkurrencefordel og en del af deres værditilbud, men det er ikke kerneforretningen.
 
 ---
 
