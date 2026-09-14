@@ -91,16 +91,17 @@ regler og sprog
 
 ## Sprogtest (Trin 4a)
 
-| Ord | Betydning 1 (hvem siger det) | Betydning 2 (hvem siger det) | → Peger på kontekster |
-|---|---|---|---|
-| levering | Kunden henter selv i butikken (Bente) | HaaV kører ud til sommerhuse (Dorte) | Afhentning vs. Udbringning |
-| vare | | | |
-| medlem | | | |
-| kunde | | | |
-| ordre | | | |
-| kampagne | | | |
+| Ord | Betydning 1 (hvem siger det)                               | Betydning 2 (hvem siger det)                                           | → Peger på kontekster                           |
+|---|------------------------------------------------------------|------------------------------------------------------------------------|-------------------------------------------------|
+| levering | Kunden henter selv i butikken (Bente)                      | HaaV kører ud til sommerhuse (Dorte)                                   | Afhentning vs. Udbringning                      |
+| vare | Fysisk vare på hylden (Bente)                              | unik enkeltstående håndværk, hvor hver eksemplar er forkselligt (Jørn) | dagligvare vs. håndværk (medlemmer) eks keramik |
+| medlem | Virksomhed, som har aftaler og betaler kontingent (preben) | Nyhedsbrevsmodtagere (mette)                                           | medlemsadministration vs. marketing             |
+| kunde | turist, som køber vare (dorte)                             |                                                                        |                                                 |
+| ordre | Samlet kurv/køb for kunden (Dorte)                         | Én Ordre per medlem pr afdeling (Preben)                               | CheckOut vs afregning                           |
+| kampagne | Haav's Markedsføringskampange (Mette)                      | Tilbud/prisændring lokalt (Bente)                                      | Marketing vs varesalg                           |
 
 ---
+Vi kunne ikke finde en tydelig forskel på kunde - der bliver brugt kunde og turist
 
 ## Tabel 4 - Afgrænsede kontekster (Trin 4b)
 
