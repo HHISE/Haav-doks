@@ -105,43 +105,52 @@ Vi kunne ikke finde en tydelig forskel på kunde - der bliver brugt kunde og tur
 
 ## Tabel 4 - Afgrænsede kontekster (Trin 4b)
 
-### Kontekst 1: _______________________
+### Kontekst 1: Produkt Oplevelse
 
-| | |
-|---|---|
-| **Underdomæner** | |
-| **Nøglebegreber (og betydning *her*)** | |
-| **Ejer data om** | |
+| |                                                  |
+|---|--------------------------------------------------|
+| **Underdomæner** | ProduktKatalog                                   |
+| **Nøglebegreber (og betydning *her*)** | vare<br/>Kampange(tilbud)<br/>Produktbeskrivelse |
+| **Ejer data om** | Vare<br/>produktbeskrivelser<br/>billeder        |
 
-### Kontekst 2: _______________________
+### Kontekst 2: KundeKøb 
 
-| | |
-|---|---|
-| **Underdomæner** | |
-| **Nøglebegreber (og betydning *her*)** | |
-| **Ejer data om** | |
+| |                                                        |
+|---|--------------------------------------------------------|
+| **Underdomæner** | Bestilling og Reservation                              |
+| **Nøglebegreber (og betydning *her*)** | Kunde<br/>Kurv<br/>Odre<br/>Rerservation<br/>Afhentning |
+| **Ejer data om** | Samme som nøglebegreber                                |
 
-### Kontekst 3: _______________________
+### Kontekst 3: Varetilgængelighed
 
-| | |
-|---|---|
-| **Underdomæner** | |
-| **Nøglebegreber (og betydning *her*)** | |
-| **Ejer data om** | |
+| |                                                              |
+|---|--------------------------------------------------------------|
+| **Underdomæner** | Lagerstyrring                                                |
+| **Nøglebegreber (og betydning *her*)** | Vare<br/>Lagerbeholdning<br/>UnikVare<br/>Holdbarhed         |
+| **Ejer data om** | Lagerantal<br/>Tilgængelighed<br/>Holdbarhed<br/>Lagerstatus |
 
-<!-- Kopiér blokken hvis I har flere end 3 kontekster -->
+### Kontekst 4: Medlemsafregning
+
+| |                                                     |
+|---|-----------------------------------------------------|
+| **Underdomæner** | Afregning                                           |
+| **Nøglebegreber (og betydning *her*)** | Medlem<br/>Ordre<br/>Provision<br/>Udbetaling       |
+| **Ejer data om** | Medlemsaftaler<br/>provitionssater<br/>udbetalinger |
 
 ---
 
 ## Context map (Trin 4c)
+Medlemsbasen er et gamelt accessSystem og vi vil derfor gerne sikre at det ikke påvirker vores nye datamodel på en dårlig måde
+- der stod der inden dokumentering er på datamodellen og derfor kan vi ikke være sikre på, hvad vi tager ind i det nye
 
-Indsæt jeres diagram her (billede, `.drawio`-fil eller PlantUML nedenfor) og udfyld relationstabellen.
+![img_1.png](img_1.png)
 
-| Fra (upstream) | Til (downstream) | Mønster | Hvorfor dette mønster? |
-|---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
+| Fra (upstream)    | Til (downstream)   | Mønster                | Hvorfor dette mønster?                                                   |
+|-------------------|--------------------|------------------------|--------------------------------------------------------------------------|
+| Produktoplevelse  | Varetilgængelighed | Open Host Service      | Det er en åben API som alle må bruge<br/>kan fx være en GET/produkt/{123} |
+| Væretilgængelighed | Kundekøb           | Customer / supplier    | for at man kan købe noget, skal der bruges noget tilgængeligheds data    |
+| Kundekøb          | Medlemsafregning   | Customer / supplier    | medlemsregningen skal kunne hente ordren for at kunne splitte den op     |
+| medlemsbasen      | Medlemsafregning   | Anti-Corruption Layser | Medlemsafregning skal beskytte sin egen datamodel mod det gamle system   |
 
 <details>
 <summary>Valgfrit: PlantUML-skabelon (diagram-as-code, kan versionsstyres)</summary>
@@ -172,7 +181,14 @@ EXT --> C : Anti-corruption Layer
 ## Trin 5 - Konklusion
 
 **1. Kontekst vi vælger til næste lektion (taktisk DDD) — og hvorfor:**
+Vi ville tage fat i den mest upstream kontekst (produktoplevelse) da de andre er alle afhængige af den
+
 
 **2. Hvor hører vores `CatalogService` fra M3.03 til? Én kontekst, eller flere?**
+vi ville sige at den hører under to, produktoplevelse og varetilgængelighed
 
 **3. Hvem er "`User`" i vores `UserService`? Passer navnet med sproget i domænet?**
+vi tror det er medlemmer i form af virksomhederne som ligger deres produkter op
+men en user kan også være kunden, som skal have en brugere når de køber et produkt
+
+men navngivningen skal laves om, så det passer til konteksterne!
