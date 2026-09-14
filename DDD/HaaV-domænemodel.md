@@ -47,37 +47,45 @@ Kampagner og nyhedsbrevet var anden kandidat til core, da dette også er deres k
 
 **Kernekompetence (fastlagt):** Fælles markedsplads for lokale varer
 
-| Forretningsfunktion | Beskrivelse (1 linje) | Kilde (kortnr. / person i Bilag A) |
-|---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
+| Forretningsfunktion         | Beskrivelse (1 linje)                                                       | Kilde (kortnr. / person i Bilag A) |
+|-----------------------------|-----------------------------------------------------------------------------|------------------------------------|
+| Produktregistrering         | Medlemer opretter deres egne vare på markedspladsen                         | bente og jørn                      |
+| Produktpræsentation         | billeder og beskrivelse af historien bag produktet                          | jørn                               |
+| Lagerstyring                | viser aktuelle antal vare, så kunden ser det rigtige lagerantal             | Bente                              |
+| Online bestilling           | kunder skal kunde bestille vare online                                      | Bente                              |
+| Reservation og afhentning   | kunder skal kunne reservere vare og hente dem i den lokale butik            | Bente                              |
+| Håndtering af unikke vare   | systemet skal kunne håndtere, hvor varene er fysiske                        | Jørn                               |
+| Holdbarhed og udløbsstyring | Vare med begrænset holdbarhed skal kunne håndteres så de sælges inden udløb | Bente                              |
 
 **Funktion(er) vi fandt i interviewene, som ikke stod på et kort:**
-
+håntering af unikke vare og holbarhed (nedereste to)
 -
-
+[HaaV-domænemodel.md](HaaV-dom%C3%A6nemodel.md)
 ---
 
 ## Tabel 3 - DDD-underdomæner (Trin 3)
+Underdomæne et veldefineret forretningsområde med sine egne
+regler, modeller og ansvarsområde. Hver forretningsfunktion kan knyttes til et tilsvarende
+underdomæne — men flere funktioner kan godt havne i samme underdomæne, hvis de deler
+regler og sprog
 
-| Underdomæne | Ansvarsområde | Funktioner fra Tabel 2 | Type | Konsekvens (byg / køb / integrér) |
-|---|---|---|---|---|
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
+| Underdomæne               | Ansvarsområde                         | Funktioner fra Tabel 2 | Type       | Konsekvens (byg / køb / integrér) |
+|---------------------------|---------------------------------------|------------------------|------------|----------------------------------|
+| Produktkatalog            | Registering og præsentation af vare   |Produktregistrering                  | Core       | byg selv                         |
+| Produktkatalog            | R & P af vare                         |Produktpræsentation                  | Core       |                                  |
+| Lager                     | Korrekt billede af vare tilgængelighed |  Lagerstyring                      | Generic    | købe / integrer                  |
+| Lager                     | korrekt billede                       |       Håndtering af unikke vare                 | Generic    |                                  |
+| Lager                     | korrekt billede                       |          Holdbarhed og udløbsstyring              | Generic    |                                  |
+| Bestilling og reservation | håndtering af køb og reservation      |       Online bestilling                 | Supporting | byg selv                         |
+| Bestilling og reservation | køb og reservation                    |       Reservation og afhentning                 | Supporting |                                  |
+
 
 **Generiske underdomæner vi får brug for, men ikke bygger selv:**
 
-| Underdomæne | Hvorfor generic? | Hvad gør vi i stedet? |
-|---|---|---|
-| | | |
-| | | |
+| Underdomæne | Hvorfor generic?                     | Hvad gør vi i stedet? |
+|------------|--------------------------------------|-----------------------|
+| Betaling   |                       | vi køber det          |
+| CRM system | fordi der allerede findes gode løsninger | køb                   |
 
 ---
 
