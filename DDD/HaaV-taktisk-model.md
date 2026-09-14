@@ -113,7 +113,7 @@ Det skal være en domænetjenestem fordi de to afregninger berører en anden kon
 **Bonus — Jørns ene lerskål. Hvilket aggregat, og i hvilken kontekst, beskytter den regel?**
 
 **Fælles skitse:** indsæt foto eller diagram her.
-
+![img.png](img.png)
 ---
 
 ## Opgave E - Hjemme
